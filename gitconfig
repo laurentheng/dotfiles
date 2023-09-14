@@ -61,4 +61,9 @@
   defaultBranch = master
 [user]
 	email = laurent.heng@gmail.com
-	name = laurent heng
+	name = Laurent Heng
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
